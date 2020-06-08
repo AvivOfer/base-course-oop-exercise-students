@@ -1,5 +1,4 @@
 import AerialVehicles.FighterJets.F15;
-import AerialVehicles.FighterJets.F16;
 import Entities.Coordinates;
 import Missions.AttackMission;
 import Missions.BdaMission;
@@ -24,7 +23,7 @@ public class testF15 {
     }
 
     @Test
-    public void testCollectIntelligence() throws MissionTypeException {
+    public void testCollectIntelligence(){
         f15.setMission(intelligenceMission);
         String expectedMessage = "Donald Duck: F15 Collecting Data in Deir al Balah with sensor type: elint";
         String message = f15.collectIntelligence();
